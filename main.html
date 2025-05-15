@@ -1,16 +1,98 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>HTML Assignment 3</title>
+  <style>
+    table.middle {
+      border: 1px solid black;
+      border-spacing: 1px;
+      padding: 1px;
+    }
+    td, th {
+      border: 1px solid black;
+      padding: 1px;
+    }
+    .center {
+      text-align: center;
+    }
+    .right {
+      text-align: right;
+    }
+    .green {
+      background-color: green;
+    }
+    .blue {
+      background-color: blue;
+    }
+    h1 {
+      text-align: center;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+  <h1>HTML Assignment #3</h1>
+
+  <!-- Table 1 -->
+  <table id="table-1" class="middle">
+    <tr>
+      <td id="t11">left</td>
+      <td id="t12">center</td>
+      <td id="t13" class="right">right</td>
+    </tr>
+    <tr class="center">
+      <td>left</td>
+      <td>center</td>
+      <td class="right">right</td>
+    </tr>
+    <tr>
+      <td>left</td>
+      <td>center</td>
+      <td class="right">right</td>
+    </tr>
+  </table>
+  <br>
+
+  <!-- Table 2 -->
+  <table id="table-2" class="middle">
+    <tr>
+      <td id="t21" colspan="6">This is a single cell spanning 6 columns</td>
+    </tr>
+    <tr>
+      <td>R2C1</td><td>R2C2</td><td>R2C3</td><td>R2C4</td><td>R2C5</td><td>R2C6</td>
+    </tr>
+    <tr>
+      <td>R3C1</td><td>R3C2</td><td>R3C3</td><td>R3C4</td><td>R3C5</td><td>R3C6</td>
+    </tr>
+    <tr>
+      <td>R4C1</td><td>R4C2</td><td>R4C3</td><td>R4C4</td><td>R4C5</td><td>R4C6</td>
+    </tr>
+    <tr>
+      <td>R5C1</td><td>R5C2</td><td>R5C3</td><td>R5C4</td><td>R5C5</td><td>R5C6</td>
+    </tr>
+    <tr>
+      <td>R6C1</td><td>R6C2</td><td>R6C3</td><td>R6C4</td><td>R6C5</td><td>R6C6</td>
+    </tr>
+  </table>
+  <br>
+
+  <!-- Table 3 -->
+  <table id="table-3" class="middle">
+    <tr class="green">
+      <td colspan="3">Header Row - Green</td>
+    </tr>
+    <tr>
+      <td>Data 1</td>
+      <td id="t-image">
+        <img src="https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2013_FallP3/Luthra%20Portfolio/images-1.jpeg" alt="Sample Image" width="100">
+      </td>
+      <td>Data 3</td>
+    </tr>
+    <tr class="blue">
+      <td colspan="3">Footer Row - Blue</td>
+    </tr>
+  </table>
 
 </body>
-
 </html>
